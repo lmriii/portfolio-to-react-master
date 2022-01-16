@@ -1,0 +1,17 @@
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import {BrowserRouter} from 'react-router-dom';
+import Main from './components/Main';
+
+
+function App() {
+  return (
+    <BrowserRouter className='overflow-hidden'>
+    <div className="App">
+      <Main />
+    </div>
+    </BrowserRouter>
+  );
+}
+
+export default App;
