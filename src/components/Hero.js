@@ -33,9 +33,6 @@ function Hero() {
                     </Row>
                 </div>
             </Jumbotron>
-
-
-
         </>
     );
 }

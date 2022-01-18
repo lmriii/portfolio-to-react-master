@@ -27,7 +27,6 @@ class Gallery extends React.Component {
     render() {
         return (
             <div>
-
                 <Nav tabs style={{
                     marginTop: '20px'
                 }} className='justify-content-center m-4'>
@@ -57,44 +56,39 @@ class Gallery extends React.Component {
                     </NavItem>
                 </Nav>
                 <FadeTransform
-                in
-                transformProps={{
-                    exitTransform: 'scale(0.5) translateX(90%)'
-                }}>
-                <TabContent activeTab={this.state.activeTab}>
-                    <TabPane tabId="1">
-                    
-                        
-                        
-                        <Row style={{
-                            marginTop: '50px'
-                        }} className='justify-content-center'>
-                            <Col lg='11'>
-                                <div><Maternity /></div>
-                            </Col>
-                        </Row>
-                    </TabPane>
-                    <TabPane tabId="2">
-                    
-                        <Row style={{
-                            marginTop: '50px'
-                        }} className='justify-content-center'>
-                            <Col lg='11'>
-                                <div><Family /></div>
-                            </Col>
-                        </Row>
-                    </TabPane>
-                    <TabPane tabId="3">
-                        
-                        <Row style={{
-                            marginTop: '50px'
-                        }} className='justify-content-center'>
-                            <Col lg='11'>
-                                <div><Newborn /></div>
-                            </Col>
-                        </Row>
-                    </TabPane>
-                </TabContent>
+                    in
+                    transformProps={{
+                        exitTransform: 'scale(0.5) translateX(90%)'
+                    }}>
+                    <TabContent activeTab={this.state.activeTab}>
+                        <TabPane tabId="1">
+                            <Row style={{
+                                marginTop: '50px'
+                            }} className='justify-content-center'>
+                                <Col lg='11'>
+                                    <div><Maternity /></div>
+                                </Col>
+                            </Row>
+                        </TabPane>
+                        <TabPane tabId="2">
+                            <Row style={{
+                                marginTop: '50px'
+                            }} className='justify-content-center'>
+                                <Col lg='11'>
+                                    <div><Family /></div>
+                                </Col>
+                            </Row>
+                        </TabPane>
+                        <TabPane tabId="3">
+                            <Row style={{
+                                marginTop: '50px'
+                            }} className='justify-content-center'>
+                                <Col lg='11'>
+                                    <div><Newborn /></div>
+                                </Col>
+                            </Row>
+                        </TabPane>
+                    </TabContent>
                 </FadeTransform>
                 <ScrollButton />
             </div>

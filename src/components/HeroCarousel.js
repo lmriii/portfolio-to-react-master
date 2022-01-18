@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Carousel, CarouselItem, CarouselControl, CarouselCaption } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators } from 'reactstrap';
 
 const items = [
     {
@@ -89,17 +89,8 @@ class HeroCarousel extends Component {
                     next={this.next}
                     previous={this.previous}
                 >
+                    <CarouselIndicators items={slides} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
                     {slides}
-                    <CarouselControl
-                        direction="prev"
-                        directionText="Previous"
-                        onClickHandler={this.previous}
-                    />
-                    <CarouselControl
-                        direction="next"
-                        directionText="Next"
-                        onClickHandler={this.next}
-                    />
                 </Carousel>
             </>
         );
