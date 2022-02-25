@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Carousel, CarouselItem, CarouselControl, CarouselCaption, CarouselIndicators } from 'reactstrap';
+import { Carousel, CarouselItem, CarouselCaption, CarouselIndicators } from 'reactstrap';
 
 const items = [
     {
