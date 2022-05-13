@@ -2,4 +2,6 @@ This is taking the previous portfolio site made with React and giving it a whole
 
 This is a portfolio site for a photographer. In it's initial stages it has the following components: Home, Gallery, About and Contact.
 
-As of Feb 2022 the project has a mix of class and functional components as in a way this project is where I was finding my voice as a React developer. The project will be moving to only functional components as well as to incorporate the use of hooks where necessary.
+The project will keep evolving as I keep learning more. Next stages are to turn all Class components into functional components as well as the implementation of Typescript.
+
+
